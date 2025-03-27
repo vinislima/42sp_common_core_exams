@@ -1,41 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   rev_print.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 22:04:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/27 18:21:08 by vinda-si         ###   ########.fr       */
+/*   Created: 2025/03/27 18:38:23 by vinda-si          #+#    #+#             */
+/*   Updated: 2025/03/27 19:28:56 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_swap(int *a, int *b)
+int	main(int argc, char *argv[])
 {
-	int temp_a;
-
-	temp_a = *a;
-	*a = *b;
-	*b = temp_a;
+	if (argc != 2)
+	{
+		write(1, "\n", 1);
+		return (0);	
+	}
+	
+	int		i = 0;
+	
+	while (argv[1][i] != '\0')
+		i++;
+	i = i -1;
+	while (i >= 0)
+	{
+		write(1, &argv[1][i], 1);
+		i--;
+	}
+	write(1, "\n", 1);
+	return (0);
 }
-
-// int	main(void)
-// {
-// 	int	*a;
-// 	int	*b;
-// 	int	numb_a;
-// 	int	numb_b;
-//
-// 	numb_a = 10;
-// 	numb_b = 100;
-//
-// 	a = &numb_a;
-// 	b = &numb_b;
-//	
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	ft_swap(a, b);
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	return (0);
-// }

@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   repeat_alpha.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 22:04:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/27 18:21:08 by vinda-si         ###   ########.fr       */
+/*   Created: 2025/03/27 18:28:56 by vinda-si          #+#    #+#             */
+/*   Updated: 2025/03/27 18:35:41 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_swap(int *a, int *b)
+int	main(void)
 {
-	int temp_a;
+	int	i;
+	int j;
+	int z;
+	char *word = "teste";
 
-	temp_a = *a;
-	*a = *b;
-	*b = temp_a;
+	i = 0;
+	while (word[i] != '\0')
+	{
+		j = 0;
+		if (word[i] >= 'a' && word[i]<= 'z')
+			while (j <= )
+	}
 }
-
-// int	main(void)
-// {
-// 	int	*a;
-// 	int	*b;
-// 	int	numb_a;
-// 	int	numb_b;
-//
-// 	numb_a = 10;
-// 	numb_b = 100;
-//
-// 	a = &numb_a;
-// 	b = &numb_b;
-//	
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	ft_swap(a, b);
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	return (0);
-// }

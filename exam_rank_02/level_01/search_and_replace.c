@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   search_and_replace.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 22:04:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/27 18:21:08 by vinda-si         ###   ########.fr       */
+/*   Created: 2025/03/27 19:58:34 by vinda-si          #+#    #+#             */
+/*   Updated: 2025/03/27 20:43:45 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_swap(int *a, int *b)
+int	main(void)
 {
-	int temp_a;
+	int i = 0;
+	char *str = "tEsTe";
 
-	temp_a = *a;
-	*a = *b;
-	*b = temp_a;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			i -= 'a';
+			write()
+		}	
+		else if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 'A';
+		write(1, &str[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
+	return (0);
 }
-
-// int	main(void)
-// {
-// 	int	*a;
-// 	int	*b;
-// 	int	numb_a;
-// 	int	numb_b;
-//
-// 	numb_a = 10;
-// 	numb_b = 100;
-//
-// 	a = &numb_a;
-// 	b = &numb_b;
-//	
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	ft_swap(a, b);
-// 	printf("A = %u, B = %u\n", *a, *b);
-// 	return (0);
-// }
