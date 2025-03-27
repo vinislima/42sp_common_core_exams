@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 19:46:38 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/26 20:39:12 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/03/26 22:05:07 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strlen(char *str)
 // int	main(void)
 // {
 // 	char *str = "1234567890";
-//
+
 // 	printf("%d\n", ft_strlen(str));
 // 	return (0);
 // }
