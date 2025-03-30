@@ -41,4 +41,5 @@ int	main(void)
 		write(1, "\n", 1);
 		number++;
 	}
+	return (0);
 }
