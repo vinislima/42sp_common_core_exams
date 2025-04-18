@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 18:38:48 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/04/17 21:55:31 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/04/17 22:06:17 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,15 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 	}
 }
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-int	main(int argc, char *argv[])
-{
-	if (argc != 3)
-		return (0);
+// int	main(int argc, char *argv[])
+// {
+// 	if (argc != 3)
+// 		return (0);
 
-	unsigned int m = lcm(atoi(argv[1]), atoi(argv[2]));
-	printf("LCM = %u\n", m);
-	return (0);
-}
+// 	unsigned int m = lcm(atoi(argv[1]), atoi(argv[2]));
+// 	printf("LCM = %u\n", m);
+// 	return (0);
+// }
