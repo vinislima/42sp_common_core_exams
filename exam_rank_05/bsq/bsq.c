@@ -14,7 +14,6 @@ void	free_map(t_map *map, int rows)
 	free(map->grid);
 }
 
-// input: returns 1 if the map is valid, 0 otherwise (nothing left allocated)
 int	read_map(FILE *f, t_map *map)
 {
 	char	*line = NULL;
@@ -52,7 +51,6 @@ int	read_map(FILE *f, t_map *map)
 	return (ok);
 }
 
-// solve: dp[j + 1] = size of the biggest square ending at (i, j)
 int	solve(t_map *map)
 {
 	int	*dp = calloc(map->cols + 1, sizeof(int));

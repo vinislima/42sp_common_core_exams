@@ -1,8 +1,5 @@
 #include "life.h"
 
-// cc -Wall -Werror -Wextra life.c
-
-// board: w * h cells in a single array, cell (x, y) is b[y * w + x]
 void	draw(char *b, int w, int h)
 {
 	int		x = 0, y = 0, pen = 0;
